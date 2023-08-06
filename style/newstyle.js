@@ -22,7 +22,7 @@ let days = [
   "Saturday",
 ];
 let day = days[d.getDay()];
-document.getElementById("actual").innerHTML = `${day}, ${hour}:${minute}`;
+document.getElementById("actual").innerHTML = `${day}, ${hour}:${min}`;
 
 function search(event) {
   event.preventDefault();
