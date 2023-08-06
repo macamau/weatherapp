@@ -1,7 +1,17 @@
 const d = new Date();
-let hour = d.getHours().padStart(2, "0");
-let minute = d.getMinutes().padStart(2, "0");
-
+let hour = d.getHours();
+let min = d.getMinutes();
+if (min < 10) {
+  // or min = min < 10 ? '0' + min : min;
+  min = "0" + min;
+} else {
+  min = min + "";
+}
+if (hour < 10) {
+  // or min = min < 10 ? '0' + min : min;
+  hour = "0" + hour$;
+  hour = hour + "";
+}
 let days = [
   "Sunday",
   "Monday",
