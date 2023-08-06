@@ -58,7 +58,7 @@ function forecast(event) {
   event.preventDefault();
   let citysearch = document.querySelector("#search-location-input").value;
   let apiKey2 = "fd8748cced25dd6fcebad3bad19f0004";
-  let apiUrl2 = `https://api.openweathermap.org/data/2.5/forecast?q=${citysearch}&appid={apiKey2}`;
+  let apiUrl2 = `https://api.openweathermap.org/data/2.5/forecast?q=${citysearch}&appid={apiKey2}&units=metric`;
   axios.get(apiUrl2).then(showForecast);
 }
 let searchCity = document.querySelector("form");
