@@ -1,6 +1,7 @@
 const d = new Date();
-let hour = d.getHours();
-let minute = d.getMinutes();
+let hour = (d.getHours()).padStart(2, "0");
+let minute = (d.getMinutes()).padStart(2, "0");
+const minute =
 let days = [
   "Sunday",
   "Monday",
