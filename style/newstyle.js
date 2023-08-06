@@ -39,7 +39,7 @@ function showTemp(response) {
   temperatureElement.innerHTML = `${temperature}°C`;
   let minTemperature = Math.round(response.data.main.temp_min);
   let minTemperatureElement = document.querySelector("#minTemp");
-  minTemperatureElement.innerHTML = `Min: ${minTemperature}°C`;
+  minTemperatureElement.innerHTML = `Min: ${minTemperature}°C /`;
   let maxTemperature = Math.round(response.data.main.temp_max);
   let maxTemperatureElement = document.querySelector("#maxTemp");
   maxTemperatureElement.innerHTML = `Max: ${maxTemperature}°C`;
