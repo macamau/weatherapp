@@ -9,7 +9,7 @@ if (min < 10) {
 }
 if (hour < 10) {
   // or min = min < 10 ? '0' + min : min;
-  hour = "0" + hour$;
+  hour = "0" + hour;
   hour = hour + "";
 }
 let days = [
